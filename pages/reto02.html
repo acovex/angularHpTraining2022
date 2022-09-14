@@ -11,7 +11,10 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -26,13 +29,166 @@
   </head>
   <body>
     <h1>Reto 02</h1>
-    <h2> 
+    <h2>
       <button type="button" class="btn btn-info">
-      <a href="../index.html">Home</a>
-    </button>
-  </h2>
+        <a href="../index.html">Home</a>
+      </button>
+    </h2>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col col-sm-9 col-md-8 col-lg-7 align-self-center">
+          <div class="card bg-light">
+            <div class="card-body">
+              <h4 class="card-title ml-3 mr-3">
+                <div class="row justify-content-center">
+                  <div class="col align-self-center text-center text-primary">
+                    Contact us
+                  </div>
+                </div>
+              </h4>
+              <hr />
 
+              <div class="card-body">
+                <div class="row justify-content-center mb-3">
+                  <div
+                    class="col-1 col-sm-2 col-lg-1 d-none d-sm-inline align-self-center text-primary fs-3"
+                  >
+                    <i class="justify-content-right bi bi-person-fill"></i>
+                  </div>
+                  <div class="col-12 col-sm-7 align-self-center">
+                    <div class="input-group">
+                      <span
+                        class="input-group-text d-inline d-sm-none text-primary"
+                        id="first-name"
+                        ><i class="bi bi-person-fill"></i
+                      ></span>
+                      <input
+                        id="first-name-input"
+                        type="text"
+                        class="form-control"
+                        placeholder="First name"
+                        aria-label="First name"
+                        aria-describedby="first-name"
+                      />
+                    </div>
+                  </div>
+                </div>
 
+                <div class="row justify-content-center mb-3">
+                  <div
+                    class="col-1 col-sm-2 col-lg-1 d-none d-sm-inline align-self-center"
+                  >
+                    <i
+                      class="justify-content-right bi bi-person-fill text-primary fs-3"
+                    ></i>
+                  </div>
+                  <div class="col-12 col-sm-7 align-self-center">
+                    <div class="input-group">
+                      <span
+                        class="input-group-text d-inline d-sm-none text-primary"
+                        id="last-name"
+                        ><i class="bi bi-person-fill"></i
+                      ></span>
+                      <input
+                        id="last-name-input"
+                        type="text"
+                        class="form-control"
+                        placeholder="Last name"
+                        aria-label="Last name"
+                        aria-describedby="last-name"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center mb-3">
+                  <div
+                    class="col-1 col-sm-2 col-lg-1 d-none d-sm-inline align-self-center"
+                  >
+                    <i
+                      class="justify-content-right bi bi-envelope-fill text-primary fs-3"
+                    ></i>
+                  </div>
+                  <div class="col-12 col-sm-7 align-self-center">
+                    <div class="input-group">
+                      <span
+                        class="input-group-text d-inline d-sm-none text-primary"
+                        id="email-adress"
+                        ><i class="bi bi-envelope-fill"></i
+                      ></span>
+                      <input
+                        id="email-adress-input"
+                        type="email"
+                        class="form-control"
+                        placeholder="Email adress"
+                        aria-label="Email adress"
+                        aria-describedby="email-adress"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center mb-3">
+                  <div
+                    class="col-1 col-sm-2 col-lg-1 d-none d-sm-inline align-self-center"
+                  >
+                    <i
+                      class="justify-content-right bi bi-telephone-fill text-primary fs-3"
+                    ></i>
+                  </div>
+                  <div class="col-12 col-sm-7 align-self-center">
+                    <div class="input-group">
+                      <span
+                        class="input-group-text d-inline d-sm-none text-primary"
+                        id="phone"
+                        ><i class="bi bi-telephone-fill"></i
+                      ></span>
+                      <input
+                        id="phone-input"
+                        type="tel"
+                        class="form-control"
+                        placeholder="Phone"
+                        aria-label="Phone"
+                        aria-describedby="phone"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center mb-3">
+                  <div class="col-1 col-sm-2 col-lg-1 d-none d-sm-inline">
+                    <i
+                      class="justify-content-right bi bi-pencil-square text-primary fs-3"
+                    ></i>
+                  </div>
+                  <div class="col-12 col-sm-7 align-self-center">
+                    <div class="input-group">
+                      <textarea
+                        rows="5"
+                        id="message"
+                        type="textarea"
+                        class="form-control"
+                        placeholder="Enter your message for us here. We will get back to you within 2 business days"
+                        aria-label="Enter your message for us here. We will get back to you within 2 business days"
+                        aria-describedby="message"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row justify-content-center">
+                  <button
+                    type="button"
+                    class="btn btn-primary bg-primary bg-gradient align-center col-12 col-sm-4 col-md-3 col-lg-2 align-self-center"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
