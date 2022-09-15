@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/calc.js"></script>
+    <title>Reto 01</title>
+  </head>
+  <body>
+    <h1>Calculadora</h1>
+    <h2>
+      <button type="button" class="btn btn-info">
+        <a class="text-light" href="../index.html">Home</a>
+      </button>
+      <button type="button" class="btn btn-info">
+        <span class="text-light">Crear nueva calculadora</span>
+      </button>
+    </h2>
+    <div class="container">
+      <div style="width: 20vw">
+        <div class="row gap-2 py-3">
+          <span
+            style="height: 40px"
+            id="displayCalc1"
+            class="form-control"
+          ></span>
+        </div>
+        <div class="row gap-2 py-1">
+          <button
+            type="button"
+            class="col btn btn-primary"
+            onclick="addNumber( 1, 'displayCalc1')"
+          >
+            <span class="text-light">1</span>
+          </button>
+          <button
+            type="button"
+            class="col btn btn-primary"
+            onclick="addNumber( 2, 'displayCalc1')"
+          >
+            <span class="text-light">2</span>
+          </button>
+          <button
+            type="button"
+            class="col btn btn-primary"
+            onclick="addNumber( 3, 'displayCalc1')"
+          >
+            <span class="text-light">3</span>
+          </button>
+          <button
+            type="button"
+            class="col btn btn-primary"
+            onclick="addOperator('+', 'displayCalc1')"
+          >
+            <span class="text-light">+</span>
+          </button>
+        </div>
+        <div class="row gap-2 py-1">
+          <button
+            type="button"
+            class="col btn btn-primary"
+            onclick="addNumber( 4, 'displayCalc1')"
+          >
+            <span class="text-light">4</span>
+          </button>
+          <button
+            type="button"
+            class="col btn btn-primary"
+            onclick="addNumber( 5, 'displayCalc1')"
+          >
+            <span class="text-light">5</span>
+          </button>
+          <button
+            type="button"
+            class="col btn btn-primary"
+            onclick="addNumber( 6, 'displayCalc1')"
+          >
+            <span class="text-light">6</span>
+          </button>
+          <button
+            type="button"
+            class="col btn btn-primary"
+            onclick="addOperator('-', 'displayCalc1')"
+          >
+            <span class="text-light">-</span>
+          </button>
+        </div>
+        <div class="row gap-2 py-1">
+          <button
+            type="button"
+            class="col btn btn-primary"
+            onclick="addNumber( 7, 'displayCalc1')"
+          >
+            <span class="text-light">7</span>
+          </button>
+          <button
+            type="button"
+            class="col btn btn-primary"
+            onclick="addNumber( 8, 'displayCalc1')"
+          >
+            <span class="text-light">8</span>
+          </button>
+          <button
+            type="button"
+            class="col btn btn-primary"
+            onclick="addNumber( 9, 'displayCalc1')"
+          >
+            <span class="text-light">9</span>
+          </button>
+          <button
+            type="button"
+            class="col btn btn-primary"
+            onclick="addOperator('*', 'displayCalc1')"
+          >
+            <span class="text-light">*</span>
+          </button>
+        </div>
+        <div class="row gap-2 py-1">
+          <button
+            type="button"
+            class="col btn btn-primary"
+            onclick="addNumber( 0, 'displayCalc1')"
+          >
+            <span class="text-light">0</span>
+          </button>
+          <button
+            type="button"
+            class="col btn btn-primary"
+            onclick="addDot('displayCalc1')"
+          >
+            <span class="text-light">.</span>
+          </button>
+          <button
+            type="button"
+            class="col btn btn-primary"
+            onclick="clearDisplay('displayCalc1')"
+          >
+            <span class="text-light">C</span>
+          </button>
+          <button
+            type="button"
+            class="col btn btn-primary"
+            onclick="showCalcNumbers('displayCalc1')"
+          >
+            <span class="text-light">=</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
