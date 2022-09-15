@@ -1,0 +1,22 @@
+{
+  "name": "node",
+  "version": "0.0.1",
+  "description": "Ejemplo node js",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js",
+    "start:js1": "node jsVanilla1.js",
+    "start:js2": "node jsVanilla2.js"
+  },
+  "keywords": [
+    "node",
+    "js",
+    "ejemplo"
+  ],
+  "author": "Alejandro Coves",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
